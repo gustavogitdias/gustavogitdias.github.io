@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
-
-
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
 
   </head>
@@ -29,7 +29,7 @@
 </div>
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause="">
 	<ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -40,7 +40,7 @@
 
       <img src="img1.jpg" alt="First slide" class="img-responsive" style="filter: grayscale(50%);">
        <div class="carousel-caption">
-<h1 style="font-size:35px;">Desenvolvimento Web</h1>
+		<h1>Desenvolvimento Web</h1>
       </div>
     </div>
 
@@ -48,7 +48,6 @@
       <img src="img2.jpg" alt="Second slide" class="img-responsive" style="filter: grayscale(85%);">
       <div class="carousel-caption">
       	<h1>Design Responsivo</h1>
-
       </div>
     </div>
 
@@ -57,7 +56,6 @@
       <img src="img3.jpg" alt="Third slide" class="img-responsive" style="filter: grayscale(50%);">
        <div class="carousel-caption">
       	<h1>Marketing Digital</h1>
-
       </div>
     </div>
   </div>
@@ -107,8 +105,8 @@
 
 <div class="section-tag3"><h1>Contato</h1></div>
 
-<div class="container">
-		<div class="row">
+<div class="container center-block">
+		<div class="row contact-form">
 			<div class="col-xs-12">
 				<form>
 				<input type="text" name="user" id="user" required="required" placeholder="Nome completo">
@@ -121,20 +119,55 @@
 
 				<textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea>
 
-				<button id="btn-enviar" class="btn">Enviar</button>
+				<button id="btn-enviar" class="btn" style="font-size:24.5px;">Enviar</button>
 				</form>
 
 			</div>
+
 		</div>
 </div>
 
-<footer>Endereço: Rua Paraná Paranaué, CURITIBA-PR.   E-mail:
-agenciawebdev@webdev.com.br      Tel: (13) 9999-6666</footer>     <!-- jQuery
+
+<div class="section-tag4"><h1>Onde Estamos</h1></div>
+
+<div id="map" style="width:100%; height:450px; margin: 0 auto; "></div>
+
+<footer><p>Endereço: Avenida marechall mallet, 500, canto forte.</p>
+ <p>Praia Grande - SP</p>
+<p>Email: moovee.devagency@gmail.com.</p>
+<div class="social-media">
+<a href="#"><img src="social1.png"></a>
+<a href="#"><img src="social2.png"></a>
+<a href="#"><img src="social3.png"></a>
+<a href="#"><img src="social4.png"></a>
+</div>
+</footer>
+
+     <!-- jQuery
 first, then Tether, then Bootstrap JS. -->
 
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -24.010103, lng: -46.403563},
+          scrollwheel: false,
+          zoom: 13,
+          draggable: false,
+
+
+        });
+
+
+      }
+
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICHjaSzu_LyI8SGeQm4zpbdrxHSffnbM&signed_in=true&callback=initMap"
+        async defer>
+    </script>
   </body>
 </html>
