@@ -17,6 +17,9 @@
 	<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  	<link rel="stylesheet" href="aos.css"/>
+
+
 
 
   </head>
@@ -29,7 +32,7 @@
 </div>
 
 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3500" data-pause="">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause="">
 	<ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -40,7 +43,7 @@
 
       <img src="img1.jpg" alt="First slide" class="img-responsive" style="filter: grayscale(50%);">
        <div class="carousel-caption">
-		<h1>Desenvolvimento Web</h1>
+		<h1 style="text-align:center;">Desenvolvimento Web</h1>
       </div>
     </div>
 
@@ -66,21 +69,21 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-4">
-        	<img src="icon-dev.png">
+        <div class="col-md-4" data-aos="fade-right">
+        	<img src="icon-dev.png" >
        		<h1 class="center-block" style="text-align:center">Desenvolvimento</h1>
        		<p>Desenvolvemos seu site, webApp, mobileApp, E-commerce e muito mais.</p>
         </div>
 
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-down">
         <img src="icon-seo.png">
        		<h1 class="center-block" style="text-align:center;">SEO</h1>
        		<p>Prestamos serviços e consultoria de SEO para melhorar o posicionamento do seu site nas pesquisas do Google.</p>
 			</div>
 
-			<div class="col-md-4">
-			<img src="icon-mkt.png">
+			<div class="col-md-4" data-aos="fade-left">
+			<img src="icon-mkt.png" >
        		<h1 class="center-block" style="text-align:center;">Inbound Marketing</h1>
        		<p>Também realizamos consultoria para Inbound marketing, para gerar leads para sua empresa.</p>
 			</div>
@@ -92,13 +95,13 @@
 
 <div class="container">
     <div class="row port-section">
-        <div class="col-sm-6 port1"></div>
+        <div class="col-sm-6 port1" data-aos="fade-right"></div>
 
-        <div class="col-sm-6 port2"></div>
+        <div class="col-sm-6 port2" data-aos="fade-down"></div>
 
-        <div class="col-sm-6 port3"></div>
+        <div class="col-sm-6 port3" data-aos="fade-up"></div>
 
-        <div class="col-sm-6 port4"></div>
+        <div class="col-sm-6 port4" data-aos="fade-left"></div>
 
     </div>
 </div>
@@ -162,12 +165,27 @@ first, then Tether, then Bootstrap JS. -->
       }
 
     </script>
+   
+ <script type="text/javascript" src="aos.js"></script>
+ <script>
+ 	AOS.init({
+ 		delay:200
+ 	});
+
+
+ </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICHjaSzu_LyI8SGeQm4zpbdrxHSffnbM&signed_in=true&callback=initMap"
         async defer>
-    </script>
+    	</script>
+
   </body>
 </html>
