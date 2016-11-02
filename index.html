@@ -8,28 +8,45 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-	<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	
   	<link rel="stylesheet" href="aos.css"/>
 
-
+  
 
 
   </head>
 
   <body>
 
+<nav class="navbar navbar-default">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+☰
+  </button>
 
-<div class="navigation">
-	
-</div>
+  <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+   
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link n" href="#"">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nossos serviços</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link nav03" href="#">Portfólio</a>
+      </li>
+
+         <li class="nav-item">
+        <a class="nav-link" href="#">Contato</a>
+      </li>
+
+      </ul>
+  </div>
+</nav>
 
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause="">
@@ -91,7 +108,7 @@
     </div>
 </div>
 
-<div class="section-tag2"><h1>Portfolio</h1></div>
+<div class="section-tag2 tag03"><h1>Portfolio</h1></div>
 
 <div class="container">
     <div class="row port-section">
@@ -108,7 +125,7 @@
 
 <div class="section-tag3"><h1>Contato</h1></div>
 
-<div class="container center-block">
+<div class="container center-block" data-aos="fade-zoom-in">
 		<div class="row contact-form">
 			<div class="col-xs-12">
 				<form>
@@ -146,46 +163,50 @@
 </div>
 </footer>
 
-     <!-- jQuery
-first, then Tether, then Bootstrap JS. -->
 
-    <script>
-      function initMap() {
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -24.010103, lng: -46.403563},
-          scrollwheel: false,
-          zoom: 13,
-          draggable: false,
+<script src="https://raw.githubusercontent.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
+<script type="text/javascript"></script>
 
-
-        });
-
-
-      }
-
-    </script>
    
  <script type="text/javascript" src="aos.js"></script>
  <script>
  	AOS.init({
- 		delay:300
+ 		delay:450,
+ 		duration:800
  	});
 
 
  </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
 
     <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDICHjaSzu_LyI8SGeQm4zpbdrxHSffnbM&signed_in=true&callback=initMap"
         async defer>
     	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
 
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="
+    sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+   <script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+</script>
   </body>
 </html>
