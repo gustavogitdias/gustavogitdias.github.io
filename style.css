@@ -380,9 +380,10 @@ footer a img{
 @media(max-width: 1200px){
 	.navbar-nav{
 		position: relative;
-		width: 55%;
+		width: 60%;
 		text-align: center;
 		display: block;
+		margin: 0 auto;
 
 	}
 }
