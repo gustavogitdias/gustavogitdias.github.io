@@ -11,6 +11,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700i" rel="stylesheet">
 	
   	<link rel="stylesheet" href="aos.css"/>
@@ -60,14 +61,14 @@
 
       <img src="img1.jpg" alt="First slide" class="img-responsive" style="filter: grayscale(50%);">
        <div class="carousel-caption">
-		<h1 style="text-align:center;">Desenvolvimento Web</h1>
+		<h1>Desenvolvimento<br>Web</h1>
       </div>
     </div>
 
     <div class="carousel-item">
       <img src="img2.jpg" alt="Second slide" class="img-responsive" style="filter: grayscale(85%);">
       <div class="carousel-caption">
-      	<h1>Design Responsivo</h1>
+      	<h1>Design <br> Responsivo</h1>
       </div>
     </div>
 
@@ -75,7 +76,7 @@
     <div class="carousel-item">
       <img src="img3.jpg" alt="Third slide" class="img-responsive" style="filter: grayscale(50%);">
        <div class="carousel-caption">
-      	<h1>Marketing Digital</h1>
+      	<h1>Marketing  <br> Digital</h1>
       </div>
     </div>
   </div>
@@ -133,11 +134,11 @@
 
 				<input type="email" name="text" id="email" required="required" placeholder="Digite seu e-mail">
 
-				<input type="tel" name="telefone" id="telefone" " placeholder="Telefone com DDD">
+				<input type="tel" name="telefone" id="telefone" " placeholder="Telefone com DDD" required="required">
 
 				<input type="tel" name="cellphone" id="cellphone" placeholder="Celular seu celular com DDD" required="required">
 
-				<textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea>
+				<textarea name="msg" id="msg" placeholder="Digite sua mensagem" required="required"></textarea>
 
 				<button id="btn-enviar" class="btn" style="font-size:24.5px;">Enviar</button>
 				</form>
@@ -204,7 +205,8 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.397, lng: 150.644},
-    zoom: 8
+    zoom: 10,
+    
   });
 }
 </script>
